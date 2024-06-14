@@ -1,6 +1,6 @@
 import React from 'react';
 import { AttachFileOutlined, EmojiEmotionsOutlined } from '@mui/icons-material';
-import { IconButton, InputAdornment, TextField } from '@mui/material';
+import { IconButton, InputAdornment, TextField, Box } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import handleFileUpload from '../../api/axios/fileUpload';
 import axios from 'axios';
@@ -36,51 +36,65 @@ export default function ChatInputField({
   };
 
   return (
-    <TextField
-      onChange={(e) => {
-        setInputValue(e.target.value);
-      }}
-      onKeyDown={handleKeyPress}
-      value={inputValue}
-      fullWidth
-      variant="outlined"
-      placeholder="Type a message..."
+    <Box
       sx={{
-        '& .MuiOutlinedInput-root': {
-          height: '40px',
-          borderRadius: '200px',
-          marginBottom: '10px',
-        },
-        '& .MuiSvgIcon-root': {
-          fontSize: '24px',
-        },
-        width: '100%',
         display: 'flex',
-        marginLeft: 'auto',
-        paddingX: '10px',
+        alignItems: 'center',
       }}
-      InputProps={{
-        endAdornment: (
-          <InputAdornment position="end">
-            <SendIcon onClick={() => handleSendMessage()} sx={{ cursor: 'pointer' }} />
-            <IconButton onClick={() => setShowEmojiPicker(!showEmojiPicker)}>
-              <EmojiEmotionsOutlined />
-            </IconButton>
-            <input
-              id="file-upload"
-              type="file"
-              accept="image/*, video/*, .pdf, .doc, .docx"
-              onChange={fileUpload}
-              style={{ display: 'none' }}
-            />
-            <label htmlFor="file-upload">
-              <IconButton component="span">
-                <AttachFileOutlined />
-              </IconButton>
-            </label>
-          </InputAdornment>
-        ),
-      }}
-    />
+    >
+      <TextField
+        onChange={(e) => {
+          setInputValue(e.target.value);
+        }}
+        onKeyDown={handleKeyPress}
+        value={inputValue}
+        fullWidth
+        variant="outlined"
+        placeholder="Type a message..."
+        sx={{
+          '& .MuiOutlinedInput-root': {
+            height: '40px',
+            borderRadius: '200px',
+            marginBottom: '10px',
+          },
+          '& .MuiSvgIcon-root': {
+            fontSize: '24px',
+          },
+          width: '100%',
+          display: 'flex',
+          marginLeft: 'auto',
+          paddingX: '10px',
+        }}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <SendIcon onClick={() => handleSendMessage()} sx={{ cursor: 'pointer' }} />
+            </InputAdornment>
+          ),
+        }}
+      />
+      <Box
+        sx={{
+          pb: 1,
+          display: 'flex',
+        }}
+      >
+        <IconButton onClick={() => setShowEmojiPicker(!showEmojiPicker)}>
+          <EmojiEmotionsOutlined />
+        </IconButton>
+        <input
+          id="file-upload"
+          type="file"
+          accept="image/*, video/*, .pdf, .doc, .docx"
+          onChange={fileUpload}
+          style={{ display: 'none' }}
+        />
+        <label htmlFor="file-upload">
+          <IconButton component="span">
+            <AttachFileOutlined />
+          </IconButton>
+        </label>
+      </Box>
+    </Box>
   );
 }

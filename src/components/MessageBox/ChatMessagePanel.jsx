@@ -42,13 +42,14 @@ const ChatMessagePanel = ({ message, isCurrentUser, prevMessage, style }) => {
               width: 'fit-content',
               maxWidth: '80%',
               height: 'fit-content',
-              padding: '4px',
+              padding: '4px 10px',
               marginLeft: 'auto',
               marginRight: 'auto',
               wordBreak: 'break-word',
-              borderRadius: '5px',
+              borderRadius: '21px',
               border: '1px solid #D3D3D3',
-              backgroundColor: 'f5f5f5',
+              backgroundColor: '#E6E6E6',
+              color: '#6E6E6E',
             }}
           >
             {message.message}
@@ -105,13 +106,14 @@ const ChatMessagePanel = ({ message, isCurrentUser, prevMessage, style }) => {
               display: 'flex',
               flexDirection: 'column',
               textAlign: 'left',
-              padding: isOnlyEmoji ? '5px' : '10px',
+              padding: isOnlyEmoji ? '5px' : '10px 15px',
               border: '1px solid #D3D3D3',
-              borderRadius: '10px',
+              borderRadius: isCurrentUser ? '15px 0 15px 15px ' : '0 15px 15px 15px ',
               width: 'fit-content',
               maxWidth: '50%',
               marginLeft: isCurrentUser ? 'auto' : !shouldShowAvatar ? '50px' : '0px',
               wordBreak: 'break-word',
+              backgroundColor: isCurrentUser ? 'white' : 'rgba(140, 164, 248, 0.39)',
             }}
           >
             {message.type === 'FILE' ? (
