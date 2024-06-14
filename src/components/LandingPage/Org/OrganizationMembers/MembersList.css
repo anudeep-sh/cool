@@ -1,0 +1,240 @@
+.viewSecondRow-orgDetailsMemberBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  align-items: center;
+}
+.viewSecondRow-Notification {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  align-items: center;
+}
+.viewSecondRow-orgDetailsMemberBlockDetsCont {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.viewSecondRow-orgDetailsMemberBlock-Email {
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  align-items: center;
+}
+.viewSecondRow-orgDetailsMemberBlockDetsCont-Email {
+  display: flex;
+  gap: 10px;
+}
+.viewSecondRow-orgDetailsMemberBlock-Email > img {
+  width: 40px;
+  height: 40px;
+}
+.viewSecondRow-orgDetailsMemberBlock > img {
+  width: 40px;
+  height: 40px;
+}
+.viewSecondRow-orgDetailsMemberBlockDets > p {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.viewSecondRow-orgDetailsMemberBlockDets-Email > p {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.viewSecondRow-orgDetailsMemberBlockDets > span {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.viewSecondRow-orgDetailsMembersList {
+  height: 210px;
+  overflow: scroll;
+}
+.viewSecondRow-orgDetailsMembersListNotification {
+  max-height: 300px;
+  overflow: scroll;
+}
+.MembersList-AcceptedBtn {
+  border-radius: 12px;
+  background: rgba(41, 183, 102, 0.2);
+  color: #29b766;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  padding: 3px 0px;
+  width: 110px;
+  cursor: pointer;
+}
+.ViewBtnNotification {
+  font-size: 16px;
+  cursor: pointer;
+}
+.MembersList-RejectedBtn {
+  border-radius: 12px;
+  background: rgba(255, 62, 62, 0.2);
+  color: #ff3e3e;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  padding: 3px 0px;
+  width: 110px;
+  cursor: pointer;
+}
+.MembersList-inviteReceived {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 0px;
+}
+.MembersList-inviteReceived-Accept {
+  border-radius: 12px;
+  background: rgba(97, 203, 142, 1);
+  color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  padding: 4px 0px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.MembersList-inviteReceived-Reject {
+  border-radius: 12px;
+  background: rgba(255, 62, 62, 1);
+  color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  padding: 4px 0px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.viewSecondRow-orgDetailsMemberBlock-PhotoUserName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.viewSecondRow-orgDetailsMemberBlock-Invite {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  .viewSecondRow-orgDetailsMemberBlockDetsCont {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 1064px) {
+  .viewSecondRow-orgDetailsMemberBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  .viewSecondRow-Notification {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  .viewSecondRow-orgDetailsMemberBlockDets > p {
+    font-size: 13px;
+  }
+  .viewSecondRow-orgDetailsMemberBlockDets > span {
+    font-size: 8px;
+  }
+  .MembersList-AcceptedBtn {
+    font-size: 12px;
+    width: 80px;
+  }
+  .ViewBtnNotification {
+    font-size: 12px;
+    width: 97px;
+  }
+  .MembersList-inviteReceived-Accept {
+    font-size: 12px;
+    width: 80px;
+  }
+  .MembersList-RejectedBtn {
+    font-size: 12px;
+    width: 80px;
+  }
+  .MembersList-inviteReceived-Reject {
+    font-size: 12px;
+    width: 80px;
+  }
+  .viewSecondRow-orgDetailsMemberBlockDets-Email > p {
+    font-size: 12px;
+  }
+  .viewSecondRow-orgDetailsMemberBlock-Invite {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .viewSecondRow-orgDetailsMemberBlockDetsCont {
+    flex-direction: column;
+  }
+  .viewSecondRow-orgDetailsMemberBlock-Invite {
+    width: 100%;
+  }
+  .viewSecondRow-orgDetailsMemberBlock,
+  .viewSecondRow-orgDetailsMembersList {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .viewSecondRow-orgDetailsMemberBlock,
+  .viewSecondRow-orgDetailsMembersList {
+    width: 74vw;
+  }
+}

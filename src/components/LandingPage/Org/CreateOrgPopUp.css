@@ -1,0 +1,244 @@
+body.CreateOrgPopup-open {
+  overflow: hidden;
+}
+body.CreateOrgPopup-open .CreateOrgPopup {
+  overflow-y: auto;
+}
+
+.CreateOrgPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.CreateOrgPopup-main {
+  position: fixed;
+  background: white;
+  width: 59%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding: 20px;
+}
+.CreateOrgPopup-main-SideBar {
+  position: fixed;
+  background: white;
+  width: 59%;
+  height: auto;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding: 20px;
+}
+
+.CreateOrgClose-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.CreateOrgClosePopup-Heading {
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.CreateOrgClosePopup-SubHeading {
+  color: #000;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.CreateOrgClosePopup-secondHalf-First {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.CreateOrgClosePopup-iputHeading {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.UploadFileName {
+  width: 22ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.CreateOrgPopup-logoUploadButton {
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: rgba(47, 53, 63, 0.4);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  width: 290px;
+  height: 40px;
+  white-space: pre-wrap;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CreateOrgClosePopup-placeholder3 {
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: rgba(0, 0, 0);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  width: 290px;
+  height: 35px;
+  white-space: pre-wrap;
+  padding: 10px 15px;
+}
+.CreateOrgInput-group {
+  position: relative;
+}
+.CreateOrgAttach-file-icon {
+  cursor: pointer;
+  width: 6%;
+  height: auto;
+}
+.CreateOrgClosePopup-placeholder2 {
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: rgba(0, 0, 0);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 99.9%;
+  height: 144.684px;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+.CreateOrgClosePopup-createBtn {
+  border-radius: 15px;
+  background: #698aff;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 5px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.CreateOrgClosePopup-createBtnCont {
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+.CreateOrgError-text {
+  color: red;
+  text-align: right;
+  font-size: 15px;
+}
+@media only screen and (max-width: 1121px) {
+  .CreateOrgPopup-main {
+    width: 70%;
+  }
+  .CreateOrgPopup-main-SideBar {
+    width: 59%;
+    top: 50%;
+    left: 57%;
+  }
+  .CreateOrgClosePopup-Heading {
+    font-size: 25px;
+  }
+  .CreateOrgClosePopup-SubHeading {
+    font-size: 15px;
+  }
+  .CreateOrgClosePopup-secondHalf-First {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .CreateOrgClosePopup-iputHeading {
+    font-size: 20px;
+  }
+  .CreateOrgClosePopup-placeholder1 {
+    width: 70%;
+    font-size: 12px;
+  }
+  .CreateOrgClosePopup-placeholder3 {
+    width: 70%;
+    font-size: 12px;
+  }
+  .CreateOrgPopup-logoUploadButton {
+    font-size: 12px;
+    width: auto;
+  }
+  .CreateOrgClosePopup-placeholder2 {
+    font-size: 12px;
+  }
+  .CreateOrgAttach-file-icon {
+    top: 50%;
+    right: 65px;
+    width: 4%;
+  }
+  .CreateOrgError-text {
+    text-align: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .CreateOrgPopup-main-SideBar {
+    width: 50%;
+    top: 50%;
+    left: 59%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .CreateOrgPopup-main-SideBar {
+    width: 70%;
+    top: 52%;
+    left: 50%;
+  }
+}

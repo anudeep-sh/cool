@@ -1,0 +1,13 @@
+
+
+.signInLogoPhone{
+    display: none;
+}
+@media (max-width: 768px){
+    .signInLogoPhone{
+        display: block;
+    }
+    .signInLogoDesktop{
+        display: none;
+    }
+}

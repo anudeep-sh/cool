@@ -1,0 +1,22 @@
+.contact-input-box {
+  overflow: scroll !important;
+}
+.contact-box {
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-input-box {
+    position: initial !important;
+    margin-top: 4rem;
+  }
+  .contact-text {
+    width: initial !important;
+  }
+  .contact-box {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 3rem 2rem !important;
+  }
+}

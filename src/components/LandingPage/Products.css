@@ -1,0 +1,123 @@
+.ourProducts {
+  border-radius: 20px;
+  background: #7795fe;
+  margin: 30px 25px;
+  padding: 30px 30px;
+}
+.productPageHeading {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.productsSecHalf {
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px;
+  margin: 30px 0 0px 0;
+  text-align: center;
+}
+.productsCardsCon {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.productsCard {
+  border-radius: 15px;
+  /* background: #7795fe; */
+  width: 320px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 5px solid #7795fe;
+}
+.productsCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productsCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+.productsImgCon {
+  text-align: center;
+}
+.productsHead {
+  padding: 0 25px;
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+.productsText {
+  padding: 0 20px;
+  color: #000;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.productsBtnDiv {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.productsBtn {
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.productsBtn:hover {
+  color: #fff;
+  background-color: #2f353f;
+}
+
+@media (min-width: 534px) and (max-width: 1024px) {
+  .productsCardsCon {
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  .productPageHeading {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .ourProducts {
+    margin: 30px 25px;
+    padding: 30px 0px;
+  }
+  .productsCardsCon {
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  .productPageHeading {
+    font-size: 24px;
+  }
+}

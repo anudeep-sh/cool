@@ -1,0 +1,275 @@
+.heroCon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.heroLeft {
+  position: relative;
+}
+.herMid {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.heroMid1 {
+  color: #698aff;
+  text-align: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 54%;
+}
+.herBlack {
+  color: black;
+}
+.heroMid2 {
+  color: rgba(0, 0, 0, 0.42);
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 40%;
+}
+.heroMid3 {
+  display: flex;
+  gap: 10%;
+}
+.startBtn {
+  border-radius: 15px;
+  background: #698aff;
+  color: #000;
+  font-family: 'Poppins';
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 15px 8px 25px;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  height: 48px;
+  width: 155px;
+}
+.startBtn:hover {
+  background: #4f68c3;
+  cursor: pointer;
+}
+.browseBtn {
+  padding: 8px 15px 8px 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border: none;
+  border-radius: 15px;
+  background: #2f353f;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 230px;
+}
+.browseBtn:hover {
+  background: #485161;
+  cursor: pointer;
+}
+.btnIconHEro {
+  padding: 0px 0 0 8px;
+}
+.heroRight {
+  position: relative;
+  margin-left: 20px;
+}
+.heroimgright {
+  position: relative;
+  padding-right: 70px;
+}
+.oneK {
+  position: absolute;
+  color: #698aff;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  top: 75%;
+  right: 60%;
+}
+.tenPlus {
+  position: absolute;
+  color: #698aff;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  top: 75%;
+  left: 50.5%;
+}
+
+@media only screen and (max-width: 1285.6px) {
+  .heroMid2 {
+    width: 25%;
+  }
+}
+@media (min-width: 534px) and (max-width: 1200px) {
+  .heroCon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .heroLeft {
+    position: relative;
+  }
+  .herMid {
+    position: relative;
+    gap: 25px;
+  }
+  .heroMid1 {
+    font-size: 24px;
+    width: auto;
+    padding: 0;
+  }
+  .herBlack {
+    color: black;
+  }
+  .heroMid2 {
+    width: auto;
+    font-size: 15px;
+    padding: 0;
+  }
+  .heroMid3 {
+    gap: 5%;
+  }
+  .startBtn {
+    font-size: 16px;
+    padding: 8px 20px;
+    height: 48px;
+    width: 155px;
+  }
+  .browseBtn {
+    padding: 8px 20px;
+    font-size: 16px;
+    height: 48px;
+    width: 210px;
+  }
+  .btnIconHEro {
+    padding: 0px 0 0 8px;
+  }
+  .heroRight {
+    position: relative;
+    top: auto;
+    margin-left: 0;
+    text-align: right;
+  }
+  .heroimgright {
+    margin-right: 25px;
+    width: 370px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .heroimgleft {
+    width: 370px;
+    height: auto;
+  }
+  .oneK {
+    font-size: 30px;
+    top: 30%;
+    right: 330px;
+  }
+  .tenPlus {
+    font-size: 30px;
+    top: 22.5%;
+    left: 202px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .heroCon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .heroLeft {
+    position: relative;
+    margin: 0;
+    align-items: center;
+  }
+  .herMid {
+    position: relative;
+    gap: 25px;
+  }
+  .heroMid1 {
+    font-size: 24px;
+    width: auto;
+    padding: 0;
+  }
+  .herBlack {
+    color: black;
+  }
+  .heroMid2 {
+    width: auto;
+    font-size: 15px;
+    padding: 0;
+  }
+  .heroMid3 {
+    gap: 3%;
+  }
+  .startBtn {
+    font-size: 16px;
+    padding: 8px 0px 8px 20px;
+    height: 48px;
+    width: 135px;
+  }
+  .browseBtn {
+    padding: 8px 0px 8px 20px;
+    font-size: 16px;
+    height: 48px;
+    width: 195px;
+  }
+  .btnIconHEro {
+    padding: 0px 0 0 8px;
+  }
+  .heroRight {
+    position: relative;
+    top: auto;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .heroimgright {
+    margin-right: 0;
+    width: 330px;
+    height: auto;
+    margin-top: 40px;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .heroimgleft {
+    width: 370px;
+    margin-left: 0px;
+    height: auto;
+  }
+  .oneK {
+    font-size: 30px;
+    top: 29%;
+    left: 90px;
+  }
+  .tenPlus {
+    font-size: 30px;
+    top: 22.5%;
+    left: 218px;
+  }
+}

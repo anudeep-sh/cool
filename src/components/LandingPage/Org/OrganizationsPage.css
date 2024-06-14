@@ -1,0 +1,194 @@
+.OrgHeroCon {
+  border-radius: 30px;
+  background: #698aff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  display: flex;
+  margin: 20px 30px 30px 30px;
+  padding: 0px 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.OrgHeroImg {
+  width: 98%;
+  height: auto;
+}
+.orgCardSecCon {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0;
+}
+.orgCardOne {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  padding: 20px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.componentCard {
+  width: 50%;
+  padding-bottom: 30px;
+}
+.orgCardHead {
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.orgCardSubHead {
+  color: #000;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 400px;
+}
+.orgInput {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10px;
+  background: #2f353f;
+  border: none;
+  height: 45px;
+}
+.OrgCreateBtn {
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  border: none;
+  align-items: center;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.3));
+  padding: 7px 20px;
+  gap: 10px;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.OrgViewBtn {
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  border: none;
+  align-items: center;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.3));
+  padding: 7px 20px;
+  gap: 10px;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 1;
+}
+.OrgJoinBtn {
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  border: none;
+  align-items: center;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.3));
+  padding: 3px 20px;
+  gap: 10px;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.OrgJoinBtn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+.OrgViewBtn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+.OrgCreateBtn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+.orgCardBtn {
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+}
+.joinErrorMessage {
+  padding: 0;
+  margin-bottom: 10px;
+  color: red;
+  padding-left: 70px;
+}
+.orgCodeInputDiv {
+  text-align: center;
+}
+@media (min-width: 534px) and (max-width: 1024px) {
+  .OrgHeroCon {
+    margin: 20px 30px 30px 30px;
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+  .OrgHeroImg {
+    width: 98%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .OrgHeroCon {
+    margin: 20px 30px 30px 30px;
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+  .OrgHeroImg {
+    width: 98%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .orgCardOne {
+    padding: 20px 25px 25px 25px;
+    gap: 10px;
+  }
+  .orgCardHead {
+    font-size: 25px;
+  }
+  .orgCardSubHead {
+    font-size: 16px;
+    width: 290px;
+  }
+  .OrgViewBtn {
+    padding: 6px 15px;
+    font-size: 15px;
+  }
+  .OrgCreateBtn {
+    padding: 6px 15px;
+    font-size: 15px;
+  }
+  .OrgJoinBtn {
+    padding: 3px 15px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .OrgHeroCon {
+    padding: 8px;
+    margin: 12px;
+  }
+  .componentCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,88 @@
+.react-multiple-carousel__arrow {
+  min-width: 32px !important;
+  min-height: 60px !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+.react-multiple-carousel__arrow::before {
+  font-size: 16px !important;
+  padding-left: 2px;
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(0% + 1px);
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px);
+}
+.Card-container {
+  width: 220px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+.overlay_container {
+  /* position: absolute; */
+  /* z-index: 12; */
+  padding-bottom: 14px;
+}
+
+.content_container {
+  /* position: relative; */
+  width: 320px;
+  height: 320px;
+  z-index: 0;
+  padding: 16px;
+  background-color: transparent;
+}
+.Card-container:hover .content_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 20; */
+}
+
+.Card-container:hover .overlay_container {
+  /* display: none; */
+}
+.Card-container:hover {
+  width: 320px;
+  height: 320px;
+  /* z-index:1; */
+  background-color: rgba(0, 0, 0, 0.5);
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.overlay_container {
+  position: relative;
+  z-index: 10;
+}
+.content_container {
+  position: absolute;
+  z-index: 90;
+}
+.parent .hover-details {
+  visibility: hidden;
+}
+.parent:hover .hover-details {
+  visibility: hidden;
+}
+
+.css-1dw77j-MuiListItemIcon-root {
+  min-width: 24px !important;
+}
+.react-multi-carousel-list {
+}
+
+.react-multi-carousel-track {
+  gap: 1rem;
+}
+.css-1rbmr7r-MuiButtonBase-root-MuiChip-root {
+  margin-right: 0px !important;
+}
+.css-ied2d2-MuiButtonBase-root-MuiChip-root.Mui-focusVisible {
+  margin-right: 0px !important;
+}
+.carousel {
+  overflow: scroll;
+}

@@ -1,0 +1,41 @@
+.formInput {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #e0e0e0;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.errorMsg {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+.formInput:focus {
+  border: none;
+  outline: 2px solid #698aff;
+}
+
+.formInput:invalid[focused='true'] {
+  border: none;
+  outline: 1px solid red;
+}
+
+.inputContainer:has(> .formInput:invalid[focused='true']) ~ .errorMsg {
+  display: block;
+}
+
+.durationSelect {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.duration {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

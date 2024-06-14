@@ -1,0 +1,212 @@
+.planSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.planCon {
+  border-radius: 30px;
+  background: #698aff;
+  padding: 10px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.45));
+}
+
+.planHead {
+  text-align: center;
+  font-family: Poppins;
+  color: #333;
+  border-radius: 12px;
+  font-size: 38px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.planSubhead {
+  color: #333;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.planDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.planCard {
+  width: 350px;
+  margin: 6px;
+  position: relative;
+  padding: 10px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.45));
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(0deg, #fff 0%, #fff 100%),
+    #fff;
+}
+
+.backgroundDisabled {
+  background: linear-gradient(0deg, #dfe6ff 0%, #dfe6ff 100%),
+    linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .planCard {
+    width: 88%;
+  }
+
+  .planHead {
+    font-size: 36px;
+  }
+
+  .planSubhead {
+    font-size: 20px;
+  }
+}
+
+.planCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.activeNote {
+  padding: 5px;
+  display: inline-block;
+  width: max-content;
+  border-radius: 15px;
+  background-color: rgba(41, 183, 102, 0.2);
+  margin: 6px;
+  color: #29b766;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planCardHead {
+  display: inline;
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  position: relative;
+  width: 300px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planCardPrice {
+  color: #000;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.planCardSubhead {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  padding: 6px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planCard > ul {
+  overflow: auto;
+  display: block;
+  height: 330px;
+}
+
+.planCardList {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  font-style: normal;
+  position: relative;
+  padding: 4px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.planCardPer {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planCardList > img {
+  display: inline;
+  left: 8px;
+  position: absolute;
+  top: 6px;
+}
+
+.planCardList > span {
+  margin-left: 54px;
+  margin-bottom: -4px;
+  margin-top: 2px;
+  height: max-content;
+}
+
+.planCard > button:disabled {
+  background: #e7e7e7;
+  cursor: not-allowed;
+}
+
+.planCard > button:disabled:hover {
+  background: #e7e7e7;
+  cursor: not-allowed;
+}
+
+.planCard > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: #698aff;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 24px;
+  position: absolute;
+  bottom: 12px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.45));
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 210px;
+  height: 60px;
+  flex-shrink: 0;
+  border-style: none;
+  margin-bottom: 15px;
+}
+
+.planCard > button > img {
+  width: 20px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.planCard > button:hover {
+  background-color: rgb(73, 96, 178);
+}

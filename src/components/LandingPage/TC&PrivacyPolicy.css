@@ -1,0 +1,37 @@
+.TopHeading {
+  border-radius: 20px;
+  background: #7795fe;
+  margin: 30px 25px;
+  padding: 50px 30px;
+}
+
+.HeadingCon {
+  color: white;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.head6 {
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 800px;
+  margin-bottom: 10px;
+}
+.text {
+  gap: 50px;
+  font-size: 20px;
+  color: white;
+}
+.list{
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 35px;
+    margin-top: 10px;
+}

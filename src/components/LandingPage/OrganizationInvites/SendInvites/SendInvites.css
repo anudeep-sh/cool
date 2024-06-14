@@ -1,0 +1,188 @@
+.SendInvitesDetails-div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+.SendInvitesDetails-div > p {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.SendInvitesDetails-RemoveInvitesImg {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.AddEmailPopUp-View-open {
+  overflow: hidden;
+}
+.AddEmailPopUp-View-open .AddEmailPopUp-View {
+  overflow-y: auto;
+}
+.AddEmailPopUp-View {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+.AddEmailPopUp-View-main {
+  position: fixed;
+  background: white;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #3b3b3b;
+  padding: 22px;
+  z-index: 3;
+  overflow-y: hidden;
+}
+.add-email-popup > p {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.add-email-popup > span {
+  color: #000;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.AddEmailPopUp-input {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.AddEmailPopUp-input > textarea {
+  width: 85%;
+  height: 50px;
+  padding: 5px;
+  border: 10px solid #d9d9d9;
+  background: #fff;
+}
+.AddEmailPopUp-input > button {
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  background: #93a9fa;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 8px;
+  height: 40px;
+  cursor: pointer;
+}
+.AddEmailPopUp-input > button:hover {
+  background-color: #7587c8;
+}
+.AddEmailPopUp-closingbtns {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+}
+.AddEmailPopUp-closingbtns-cancel {
+  color: rgba(47, 53, 63, 0.4);
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  background: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 8px;
+  cursor: pointer;
+}
+.AddEmailPopUp-closingbtns-cancel:hover {
+  background-color: rgba(194, 195, 199, 0.4);
+}
+.AddEmailPopUp-closingbtns-ok {
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  background: #93a9fa;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 8px;
+  cursor: pointer;
+}
+.AddEmailPopUp-closingbtns-ok:hover {
+  background-color: #7587c8;
+}
+.enteredEmailsDiv > li {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .AddEmailPopUp-View-main {
+    width: 80%;
+  }
+  .AddEmailPopUp-input > textarea {
+    width: 85%;
+    height: 60px;
+    padding: 5px;
+    border: 10px solid #d9d9d9;
+    background: #fff;
+  }
+  .AddEmailPopUp-View-main {
+    left: 50%;
+  }
+  .AddEmailPopUp-closingbtns-ok {
+    font-size: 12px;
+  }
+  .AddEmailPopUp-closingbtns-cancel {
+    font-size: 12px;
+  }
+  .AddEmailPopUp-input > button {
+    font-size: 12px;
+  }
+}

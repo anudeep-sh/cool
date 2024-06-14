@@ -1,0 +1,172 @@
+.featuresCon {
+  position: relative;
+  margin: 50px 100px 107px 100px;
+  border-radius: 20px;
+  background: rgba(26, 73, 241, 0.5);
+
+  padding: 30px 0;
+}
+.featureHead {
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.featureSubSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.featureImg {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.featureBtn {
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-style: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  padding: 10px 0px 10px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.featureBtn:hover {
+  color: #fff;
+  background-color: #2f353f;
+}
+.featureCardCon {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+.featureCard {
+  border-radius: 15px;
+  background: #fff;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  gap: 10px;
+}
+.featureCardIcon {
+  max-width: 100%;
+  height: auto;
+}
+.featureCardHeading {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.featureCardSubHeading {
+  color: #000;
+  font-family: 'Lato';
+  font-size: 17.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.featureCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 534px) and (max-width: 1200px) {
+  .featuresCon {
+    margin: 50px 20px 107px 20px;
+    padding: 30px 0;
+  }
+  .featureImg {
+    max-width: 90%;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  .featureHead {
+    font-size: 32px;
+  }
+  .featureSubSec {
+    gap: 25px;
+  }
+  .featureBtn {
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    margin-bottom: 30px;
+  }
+  .featureCardCon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 20px 0;
+  }
+  .featureCard {
+    padding: 20px 20px;
+    width: 220px;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .featuresCon {
+    margin: 50px 20px 107px 20px;
+    padding: 30px 0;
+  }
+  .featureImg {
+    max-width: 90%;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  .featureHead {
+    font-size: 32px;
+  }
+  .featureSubSec {
+    gap: 25px;
+  }
+  .featureBtn {
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    margin-bottom: 30px;
+  }
+  .featureCardCon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 20px 0;
+  }
+  .featureCard {
+    padding: 20px 20px;
+    width: 220px;
+    gap: 10px;
+  }
+}

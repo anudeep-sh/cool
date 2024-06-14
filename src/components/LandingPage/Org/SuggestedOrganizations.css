@@ -1,0 +1,371 @@
+body.ViewOrgPopup-open {
+  overflow: hidden;
+}
+
+body.ViewOrgPopup-open .ViewOrgPopup {
+  overflow-y: auto;
+}
+
+.ViewOrgPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.ViewOrgPopup-main {
+  z-index: 1;
+  position: fixed;
+  background: white;
+  width: 59%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding: 20px;
+}
+.ViewOrgPopup-main-SideBar {
+  z-index: 1;
+  position: fixed;
+  background: white;
+  width: 59%;
+  height: auto;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding: 20px;
+}
+.ViewOrgClose-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.ViewOrgClosePopup-Heading {
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.ViewOrgClosePopup-SubHeading {
+  color: #000;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.ViewOrgmidddle {
+  display: flex;
+  gap: 20px;
+}
+.ViewOrgInput-searchHead {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ViewOrgClosePopup-placeholder1 {
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: rgba(47, 53, 63, 0.4);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  width: 290px;
+  height: 35px;
+  white-space: pre-wrap;
+  padding: 5px 0px 5px 15px;
+}
+.ViewOrgInput-group {
+  position: relative;
+}
+.ViewOrgSearch-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-right: 10px;
+  width: 6%;
+  height: auto;
+}
+.ViewOrgInput-searchBtn {
+  border-radius: 15px;
+  background: #93a9fa;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.ViewOrg-suggestedHead {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 20px;
+}
+.ViewOrg-orgsCon {
+  gap: 20px;
+  margin-top: 20px;
+  height: 250px;
+  overflow: scroll;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ViewOrg-orgsRow {
+  display: flex;
+  margin: 0 10px;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 15px 15px;
+  align-items: center;
+  padding: 10px;
+}
+.ViewOrg-LogoImg {
+  width: 50px;
+  height: auto;
+}
+.ViewOrg-orgsRowLeft {
+  display: flex;
+  gap: 20px;
+}
+
+.ViewOrg-orgsInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ViewOrg-orgsName {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  word-wrap: break-word;
+}
+
+.ViewOrg-orgsCreator {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ViewOrg-orgsBtnDiv {
+  display: flex;
+  gap: 20px;
+}
+.ViewOrg-orgsViewBtn {
+  border-radius: 15px;
+  background: #93a9fa;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+}
+.ViewOrg-orgsRequestBtn {
+  width: 205px;
+  height: 45px;
+  height: auto;
+  border-radius: 15px;
+  background: #93a9fa;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.ViewOrgmidddle-second {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.ViewOrg-orgsRequestBtnDisabled {
+  width: 205px;
+  height: 45px;
+  height: auto;
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: rgba(47, 53, 63, 0.4);
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  filter: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  cursor: pointer;
+}
+.SuggestedOrginitials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #354150;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 50%;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1000px) {
+  .ViewOrgPopup-main-SideBar {
+    left: 60%;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .ViewOrg-orgsRowLeft {
+    text-align: left;
+  }
+  .ViewOrg-orgsRow {
+    margin: 0 10px;
+    gap: 10px;
+    margin: 15px 15px;
+    padding: 15px 10px;
+  }
+  .ViewOrgmidddle {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ViewOrg-orgsBtnDiv {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .ViewOrg-orgsViewBtn {
+    font-size: 13px;
+    justify-content: center;
+    height: 35px;
+  }
+  .ViewOrg-orgsRequestBtn {
+    font-size: 13px;
+    width: 166px;
+    height: 35px;
+  }
+  .ViewOrgClosePopup-placeholder1 {
+    font-size: 16px;
+    width: 210px;
+    height: 35px;
+    padding: 5px 0px 5px 15px;
+  }
+  .ViewOrgmidddle-second {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ViewOrgSearch-icon {
+    left: 180px;
+    width: 4%;
+    height: auto;
+  }
+  .ViewOrgInput-searchBtn {
+    font-size: 16px;
+    width: 135px;
+    padding: 5px 15px;
+  }
+  .ViewOrg-LogoImg {
+    width: 50px;
+  }
+  .ViewOrg-orgsName {
+    width: 150px;
+  }
+  .SuggestedOrginitials-container {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .ViewOrgPopup-main-SideBar {
+    width: 50%;
+    top: 50%;
+    left: 59%;
+    margin-bottom: 20px;
+    height: 90vh;
+    overflow: auto;
+  }
+  .ViewOrg-orgsRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ViewOrgPopup-main-SideBar {
+    width: 70%;
+    top: 60%;
+    left: 50%;
+  }
+}

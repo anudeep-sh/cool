@@ -1,0 +1,19 @@
+.overflow-y-auto::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-y-auto {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.overflow-auto::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-auto{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+

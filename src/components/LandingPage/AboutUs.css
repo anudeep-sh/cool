@@ -1,0 +1,163 @@
+.aboutUs {
+  border-radius: 20px;
+  background: #7795fe;
+  margin: 30px 25px;
+  padding: 50px 30px;
+}
+
+.aboutHeadingCon {
+  /* color: #000; */
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 800px;
+}
+.aboutTextCon {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 50px;
+}
+.aboutTextLeft {
+  color: #ffffff;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutBtnCon {
+  border-radius: 15px;
+  background: #2f353f;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 20px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.aboutLowerCon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 80px 50px 20px 50px;
+}
+.aboutCardCon {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px 20px 20px;
+  width: 270px;
+  gap: 10px;
+  border: #87898b 15px solid;
+  flex-wrap: wrap;
+  border-radius: 30px;
+}
+.aboutCardCon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aboutCardCon:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+.aboutCardCon2 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.aboutCardCon3 {
+  color: #4b4949;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.aboutPhone {
+  display: none;
+}
+@media (min-width: 534px) and (max-width: 1024px) {
+  .aboutHeadingCon {
+    font-size: 35px;
+    width: auto;
+    text-align: center;
+  }
+  .aboutTextCon {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 40px;
+    text-align: center;
+  }
+  .aboutTextLeft {
+    text-align: left;
+    font-size: 22px;
+  }
+  .aboutBtnCon {
+    gap: 20px;
+    padding: 12px 25px;
+  }
+  .aboutLowerCon {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 20px 50px;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .aboutUs {
+    margin: 30px 25px;
+    padding: 30px 20px;
+  }
+  .aboutHeadingCon {
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+  }
+  .aboutTextCon {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .aboutTextLeft {
+    text-align: left;
+    font-size: 22px;
+  }
+  .aboutBtnCon {
+    gap: 20px;
+    padding: 12px 25px;
+  }
+  .aboutLowerCon {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 20px 50px;
+    gap: 50px;
+  }
+  .aboutDesktop {
+    display: none;
+  }
+  .aboutPhone {
+    display: block;
+    width: 329px;
+    height: auto;
+  }
+}

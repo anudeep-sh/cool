@@ -1,0 +1,2 @@
+export const ADD_ACCESS_USER = 'ADD_ACCESS_USER';
+export const REMOVE_ACCESS_USER = 'REMOVE_ACCESS_USER';

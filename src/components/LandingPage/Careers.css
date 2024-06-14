@@ -1,0 +1,222 @@
+.careersCon {
+  border-radius: 20px;
+  background: #7795fe;
+  margin: 30px 25px;
+  padding: 30px 30px;
+}
+.careersHead {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.careersSubHead {
+  color: #fff;
+  font-family: 'Lato';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 30px 80px;
+}
+.careersSubCon {
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px;
+  margin: 30px 0px;
+  text-align: center;
+}
+.careersSubUpper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 40px;
+  border-bottom: #000 2px solid;
+}
+.jobHead {
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.jobInput {
+  border-radius: 15px;
+  border: 1px solid #2f353f;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding: 10px 30px;
+  width: 500px;
+}
+
+.careersOpen {
+  border-radius: 15px;
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 95%;
+  margin: 20px 0;
+}
+.careersOpen1 {
+  color: #3f3f3f;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+.careersOpen2 {
+  color: #565656;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.careersOpen3 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+a {
+  color: #000;
+}
+.careersSubDown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 40px;
+}
+.benefitsHead {
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.benefitsCardCon {
+  display: flex;
+  justify-content: space-between;
+}
+.CareerCard {
+  border-radius: 15px;
+  border: 2px solid #d9d9d9;
+  padding: 20px;
+  width: 200px;
+}
+.CareerCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+.CareerCard > img {
+  width: 156px;
+  height: auto;
+}
+.careersCardHeading {
+  color: #000;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 534px) and (max-width: 1024px) {
+  .careersHead {
+    font-size: 30px;
+  }
+  .careersSubHead {
+    font-size: 22px;
+    padding: 20px 10px 0px 10px;
+  }
+  .careersSubCon {
+    padding: 30px;
+    margin: 30px 0px 0px 0px;
+  }
+  .benefitsCardCon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 60px;
+  }
+  .careersSubDown {
+    gap: 20px;
+    margin: 20px 20px;
+  }
+  .careersSubUpper {
+    margin: 0 20px;
+    border-bottom: #000 2px solid;
+  }
+  .jobInput {
+    padding: 10px 30px;
+    width: 505px;
+  }
+
+  .careersOpen {
+    padding: 30px;
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .careersCon {
+    margin: 30px 25px;
+    padding: 30px 0px;
+  }
+  .careersHead {
+    font-size: 30px;
+  }
+  .careersSubHead {
+    font-size: 22px;
+    padding: 20px 20px 0px 20px;
+  }
+  .careersSubCon {
+    padding: 30px;
+    margin: 30px 0px 0px 0px;
+  }
+  .benefitsCardCon {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .careersSubDown {
+    gap: 20px;
+    margin: 20px 20px;
+  }
+  .careersSubUpper {
+    margin: 0 10px;
+    border-bottom: #000 2px solid;
+  }
+  .jobInput {
+    padding: 10px 30px;
+    width: 240px;
+  }
+  .careersOpen {
+    padding: 30px;
+    width: 80%;
+    margin: 20px 0;
+  }
+}
